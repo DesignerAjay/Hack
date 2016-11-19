@@ -1,0 +1,12 @@
+
+$('li.hs_cos_flex-slide-main > img').each(function(){
+var imgPath = $(this).attr('src');
+$(this).parent().css('background-image', 'url(' + imgPath + ')');
+$(this).remove();
+});
+
+
+// Custom Banner
+var bannerImage = $('.banner-image img').attr('src');
+$('.custom-banner').css('background-image', 'url(' + bannerImage + ')');
+$('.banner-image').closest('.row-fluid-wrapper').remove();
